@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Celebrity Profile</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+
+<body>
+
+
+    <header class="site-header">
+
+        <div class="container nav-container">
+
+            <a href="index.html" class="logo">
+                <span>THE</span>
+                EXPERIENCE
+            </a>
+
+            <nav class="nav-links">
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="#about" class="nav-celebrity-about">
+                    About
+                </a>
+
+                <a href="packages.html" class="nav-celebrity-packages">
+                    Packages
+                </a>
+
+                <a href="donate.html" class="nav-celebrity-support">
+                    Donate
+                </a>
+
+                <a href="#" id="contactTawk">
+                    Contact
+                </a>
+
+
+                <a href="booking.html" class="nav-button" onclick="openTawkChat()">
+                    Request a Meet & Greet
+                </a>
+
+            </nav>
+
+
+            <button class="menu-toggle" id="menuToggle">
+                ☰
+            </button>
+
+    </header>
+
+
+    <main>
+
+
+        <!-- HERO -->
+
+        <section class="profile-hero">
+
+            <div class="container">
+
+                <div class="profile-hero-content">
+
+                    <div class="profile-image">
+
+                        <img id="profileImage" src="" alt="">
+
+                    </div>
+
+                    <div>
+
+                        <span class="eyebrow" id="profileCategory">
+                        </span>
+
+                        <h1 id="profileName">
+                        </h1>
+
+                        <p id="profileShortBio">
+                        </p>
+
+                        <div class="profile-actions">
+
+                            <a href="packages.html" id="profilePackages" class="explore-button" onclick="openTawkChat()">
+                                EXPLORE EXPERIENCES
+                            </a>
+
+
+
+
+                            <a href="donate.html" id="profileSupport" class="explore-button" onclick="openTawkChat()">
+                                MAKE DONATION
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <br>
+
+
+        <!-- ABOUT -->
+
+        <section class="profile-about" id="about">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="eyebrow">
+                        ABOUT
+                    </span>
+
+                    <h2 id="aboutName">
+                    </h2>
+
+                </div>
+
+                <div class="profile-about-content">
+
+                    <p id="profileBio">
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <footer>
+
+        <div class="footer-main">
+
+            <div>
+
+                <a href="index.html" class="logo">
+                    <span>THE</span>
+                    EXPERIENCE
+                </a>
+
+                <p>
+                    Creating memorable fan experiences,
+                    one moment at a time.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <span>
+                © 2026 THE EXPERIENCE. All rights reserved.
+            </span>
+
+            <span>
+                Private fan experiences
+            </span>
+
+        </div>
+
+    </footer>
+
+
+    <script src="js/celebrities.js"></script>
+    <script src="js/script.js"></script>
+
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+        var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+        (function () {
+            var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/6ab15b1804573f34480e9dd4/1k32cnn01';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+    </script>
+    <!--End of Tawk.to Script-->
+
+</body>
+
+</html>
