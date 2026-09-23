@@ -945,6 +945,789 @@ const celebrities = {
 
         ]
 
+    },
+
+    "glen-powell": {
+        name: "Glen Powell",
+        category: "Actor & Producer",
+        image: "images/glen-powell.jpg",
+        heroImage: "images/glen-powell-hero.jpg",
+
+        shortBio:
+            "American actor and producer known for charismatic performances in films including Top Gun: Maverick, Anyone But You, Hit Man, Hidden Figures, and Everybody Wants Some!!.",
+
+        bio: `
+        <p>Glen Powell is an American actor and producer whose career has developed across television, comedy, drama, action, and major Hollywood productions. Born in Austin, Texas, Powell began acting at a young age and gradually built a varied screen career through television appearances and supporting film roles.</p>
+
+        <p>He gained wider recognition through projects such as <em>Scream Queens</em>, <em>Everybody Wants Some!!</em>, and <em>Hidden Figures</em>, before taking on the role of Lieutenant Jake "Hangman" Seresin in <em>Top Gun: Maverick</em>. The film brought him international attention and established him as a prominent leading actor.</p>
+
+        <p>Powell continued to demonstrate his range with the romantic comedy <em>Anyone But You</em> and the action-comedy thriller <em>Hit Man</em>. His performances have allowed him to move comfortably between comedy, romance, drama, and action-oriented roles.</p>
+
+        <h3>Some notable films and projects include:</h3>
+
+        <ul>
+            <li><em>Top Gun: Maverick</em></li>
+            <li><em>Anyone But You</em></li>
+            <li><em>Hit Man</em></li>
+            <li><em>Hidden Figures</em></li>
+            <li><em>Everybody Wants Some!!</em></li>
+            <li><em>Set It Up</em></li>
+            <li><em>Scream Queens</em></li>
+            <li><em>Chad Powers</em></li>
+        </ul>
+
+        <p>With work spanning acting and producing, Glen Powell continues to build a diverse career across film and television while taking on both leading and supporting roles.</p>
+    `,
+
+        location: "Austin, Texas",
+        email: "official-contact-required",
+
+        social: {
+            instagram: "#",
+            facebook: "#",
+            x: "#"
+        },
+
+        stats: {
+            experience: "20+ years",
+            appearances: "60+ credits",
+            fans: "Global audience"
+        },
+
+        packages: [
+
+            {
+
+                name: "Essential",
+
+                price: 10099,
+
+                description:
+                    "A personal meet-and-greet experience."
+
+            },
+
+            {
+
+                name: "Premium",
+
+                price: 34999,
+
+                description:
+                    "An extended personal experience with additional time."
+
+            },
+
+            {
+
+                name: "VIP",
+
+                price: 49999,
+
+                description:
+                    "The complete premium experience."
+
+            }
+
+        ]
+    },
+
+    "sydney-sweeney": {
+        name: "Sydney Sweeney",
+        category: "Actress & Producer",
+        image: "images/sydney-sweeney.jpg",
+        heroImage: "images/sydney-sweeney-hero.jpg",
+
+        shortBio:
+            "American actress and producer known for Euphoria, The White Lotus, Anyone But You, Immaculate, and Reality.",
+
+        bio: `
+        <p>Sydney Sweeney is an American actress and producer whose career includes television dramas, independent films, romantic comedies, and major studio productions. She began working professionally as a young performer and gradually built a broad screen portfolio.</p>
+
+        <p>Sweeney gained wider attention through television projects including <em>The Handmaid's Tale</em>, <em>Sharp Objects</em>, and <em>Everything Sucks!</em>. Her role as Cassie Howard in the HBO series <em>Euphoria</em> became one of her most recognized performances.</p>
+
+        <p>Her film work includes <em>Once Upon a Time in Hollywood</em>, <em>Reality</em>, <em>Anyone But You</em>, and <em>Immaculate</em>. Through her production work, she has also become involved in developing projects beyond her acting roles.</p>
+
+        <h3>Some notable films and projects include:</h3>
+
+        <ul>
+            <li><em>Euphoria</em></li>
+            <li><em>The White Lotus</em></li>
+            <li><em>Anyone But You</em></li>
+            <li><em>Immaculate</em></li>
+            <li><em>Reality</em></li>
+            <li><em>Once Upon a Time in Hollywood</em></li>
+            <li><em>Madame Web</em></li>
+            <li><em>The Handmaid's Tale</em></li>
+            <li><em>Sharp Objects</em></li>
+        </ul>
+
+        <p>Sweeney continues to work across film and television while developing her career as both an actress and producer.</p>
+    `,
+
+        location: "Spokane, Washington",
+        email: "official-contact-required",
+
+        social: {
+            instagram: "#",
+            facebook: "#",
+            x: "#"
+        },
+
+        stats: {
+            experience: "15+ years",
+            appearances: "30+ credits",
+            fans: "Global audience"
+        },
+
+        packages: [
+
+            {
+
+                name: "Essential",
+
+                price: 10099,
+
+                description:
+                    "A personal meet-and-greet experience."
+
+            },
+
+            {
+
+                name: "Premium",
+
+                price: 34999,
+
+                description:
+                    "An extended personal experience with additional time."
+
+            },
+
+            {
+
+                name: "VIP",
+
+                price: 49999,
+
+                description:
+                    "The complete premium experience."
+
+            }
+
+        ]
+    },
+
+
+    "michael-b-jordan": {
+        name: "Michael B. Jordan",
+        category: "Actor, Director & Producer",
+        image: "images/michael-b-jordan.jpg",
+        heroImage: "images/michael-b-jordan-hero.jpg",
+
+        shortBio:
+            "American actor, director, and producer known for Fruitvale Station, Creed, Black Panther, Creed III, and Sinners.",
+
+        bio: `
+        <p>Michael B. Jordan is an American actor, director, and producer whose career spans television, film, and filmmaking. He first gained recognition through television roles before establishing himself as one of the leading actors of his generation.</p>
+
+        <p>Jordan received significant acclaim for portraying Oscar Grant in <em>Fruitvale Station</em>, a performance that helped establish his reputation in feature film. He later became widely known for playing Adonis Johnson in the <em>Creed</em> franchise, a role he reprised in <em>Creed II</em> and <em>Creed III</em>.</p>
+
+        <p>He also joined the Marvel Cinematic Universe as Erik Killmonger in <em>Black Panther</em> and returned to the character in <em>Black Panther: Wakanda Forever</em>. In addition to acting, Jordan has expanded his career into directing and producing.</p>
+
+        <h3>Some notable films include:</h3>
+
+        <ul>
+            <li><em>Fruitvale Station</em></li>
+            <li><em>Creed</em></li>
+            <li><em>Creed II</em></li>
+            <li><em>Creed III</em></li>
+            <li><em>Black Panther</em></li>
+            <li><em>Black Panther: Wakanda Forever</em></li>
+            <li><em>Just Mercy</em></li>
+            <li><em>Without Remorse</em></li>
+            <li><em>Sinners</em></li>
+        </ul>
+
+        <p>Jordan's career now encompasses acting, directing, and producing, giving him a significant presence both in front of and behind the camera.</p>
+    `,
+
+        location: "Newark, New Jersey",
+        email: "official-contact-required",
+
+        social: {
+            instagram: "#",
+            facebook: "#",
+            x: "#"
+        },
+
+        stats: {
+            experience: "25+ years",
+            appearances: "40+ credits",
+            fans: "Global audience"
+        },
+
+        packages: [
+
+            {
+
+                name: "Essential",
+
+                price: 10099,
+
+                description:
+                    "A personal meet-and-greet experience."
+
+            },
+
+            {
+
+                name: "Premium",
+
+                price: 34999,
+
+                description:
+                    "An extended personal experience with additional time."
+
+            },
+
+            {
+
+                name: "VIP",
+
+                price: 49999,
+
+                description:
+                    "The complete premium experience."
+
+            }
+
+        ]
+    },
+
+
+    "denzel-washington": {
+        name: "Denzel Washington",
+        category: "Actor, Director & Producer",
+        image: "images/denzel-washington.jpg",
+        heroImage: "images/denzel-washington-hero.jpg",
+
+        shortBio:
+            "Acclaimed American actor, director, and producer known for Malcolm X, Training Day, Glory, Philadelphia, Fences, and The Equalizer.",
+
+        bio: `
+        <p>Denzel Washington is an American actor, director, and producer whose career has extended across stage, television, and film for several decades. He began his professional acting career after studying drama and later established himself through a combination of television and feature-film performances.</p>
+
+        <p>Washington gained widespread recognition through roles in films such as <em>Glory</em>, <em>Malcolm X</em>, <em>Philadelphia</em>, and <em>The Hurricane</em>. His performances have frequently placed him in dramatic, historical, crime, and action-oriented stories.</p>
+
+        <p>His portrayal of police detective Alonzo Harris in <em>Training Day</em> earned him the Academy Award for Best Actor. He also directed and starred in <em>Antwone Fisher</em> and <em>Fences</em>, demonstrating his work behind the camera as well as in front of it.</p>
+
+        <h3>Some notable films include:</h3>
+
+        <ul>
+            <li><em>Glory</em></li>
+            <li><em>Malcolm X</em></li>
+            <li><em>Philadelphia</em></li>
+            <li><em>The Hurricane</em></li>
+            <li><em>Training Day</em></li>
+            <li><em>Man on Fire</em></li>
+            <li><em>American Gangster</em></li>
+            <li><em>Flight</em></li>
+            <li><em>Fences</em></li>
+            <li><em>The Equalizer</em></li>
+        </ul>
+
+        <p>With a career spanning decades, Washington remains one of the most recognizable performers in American cinema while continuing to work as an actor, director, and producer.</p>
+    `,
+
+        location: "Mount Vernon, New York",
+        email: "official-contact-required",
+
+        social: {
+            instagram: "#",
+            facebook: "#",
+            x: "#"
+        },
+
+        stats: {
+            experience: "50+ years",
+            appearances: "60+ credits",
+            fans: "Global audience"
+        },
+
+        packages: [
+
+            {
+
+                name: "Essential",
+
+                price: 10099,
+
+                description:
+                    "A personal meet-and-greet experience."
+
+            },
+
+            {
+
+                name: "Premium",
+
+                price: 34999,
+
+                description:
+                    "An extended personal experience with additional time."
+
+            },
+
+            {
+
+                name: "VIP",
+
+                price: 49999,
+
+                description:
+                    "The complete premium experience."
+
+            }
+
+        ]
+    },
+
+
+    "leonardo-dicaprio": {
+        name: "Leonardo DiCaprio",
+        category: "Actor & Producer",
+        image: "images/leonardo-dicaprio.jpg",
+        heroImage: "images/leonardo-dicaprio-hero.jpg",
+
+        shortBio:
+            "American actor and producer known for Titanic, The Departed, Inception, The Wolf of Wall Street, The Revenant, and Killers of the Flower Moon.",
+
+        bio: `
+        <p>Leonardo DiCaprio is an American actor and producer whose career has developed from early television and supporting roles into a long-running film career involving major directors and internationally recognized productions.</p>
+
+        <p>DiCaprio became an international star following his performances in <em>Romeo + Juliet</em> and <em>Titanic</em>. He later pursued a wide variety of dramatic roles, frequently working with directors including Martin Scorsese and Christopher Nolan.</p>
+
+        <p>His filmography includes acclaimed performances in <em>The Departed</em>, <em>Inception</em>, <em>Django Unchained</em>, <em>The Wolf of Wall Street</em>, and <em>Once Upon a Time... in Hollywood</em>. His performance in <em>The Revenant</em> earned him the Academy Award for Best Actor.</p>
+
+        <h3>Some notable films include:</h3>
+
+        <ul>
+            <li><em>Titanic</em></li>
+            <li><em>Romeo + Juliet</em></li>
+            <li><em>The Departed</em></li>
+            <li><em>Inception</em></li>
+            <li><em>Shutter Island</em></li>
+            <li><em>Django Unchained</em></li>
+            <li><em>The Wolf of Wall Street</em></li>
+            <li><em>The Revenant</em></li>
+            <li><em>Once Upon a Time... in Hollywood</em></li>
+            <li><em>Killers of the Flower Moon</em></li>
+        </ul>
+
+        <p>Beyond acting, DiCaprio has worked extensively as a producer and has been involved in a range of film projects through his production work.</p>
+    `,
+
+        location: "Los Angeles, California",
+        email: "official-contact-required",
+
+        social: {
+            instagram: "#",
+            facebook: "#",
+            x: "#"
+        },
+
+        stats: {
+            experience: "40+ years",
+            appearances: "50+ credits",
+            fans: "Global audience"
+        },
+
+        packages: [
+
+            {
+
+                name: "Essential",
+
+                price: 10099,
+
+                description:
+                    "A personal meet-and-greet experience."
+
+            },
+
+            {
+
+                name: "Premium",
+
+                price: 34999,
+
+                description:
+                    "An extended personal experience with additional time."
+
+            },
+
+            {
+
+                name: "VIP",
+
+                price: 49999,
+
+                description:
+                    "The complete premium experience."
+
+            }
+
+        ]
+    },
+
+
+    "ana-de-armas": {
+        name: "Ana de Armas",
+        category: "Actress & Producer",
+        image: "images/ana-de-armas.jpg",
+        heroImage: "images/ana-de-armas-hero.jpg",
+
+        shortBio:
+            "Cuban-Spanish actress and producer known for Blade Runner 2049, Knives Out, No Time to Die, and The Gray Man.",
+
+        bio: `
+        <p>Ana de Armas is a Cuban-Spanish actress and producer who has developed an international film career across Spanish-language cinema and Hollywood productions. She began studying acting at the National Theatre School of Havana and made her film debut while still young.</p>
+
+        <p>After building experience in Spanish film and television, de Armas moved to Los Angeles and began taking on increasingly prominent English-language roles. Her performances in <em>War Dogs</em> and <em>Blade Runner 2049</em> introduced her to a wider international audience.</p>
+
+        <p>She received particularly strong attention for her role as Marta Cabrera in <em>Knives Out</em> and later appeared as Paloma in the James Bond film <em>No Time to Die</em>. She has also starred in films including <em>The Gray Man</em> and <em>Blonde</em>.</p>
+
+        <h3>Some notable films include:</h3>
+
+        <ul>
+            <li><em>Blade Runner 2049</em></li>
+            <li><em>Knives Out</em></li>
+            <li><em>No Time to Die</em></li>
+            <li><em>War Dogs</em></li>
+            <li><em>Hands of Stone</em></li>
+            <li><em>Blonde</em></li>
+            <li><em>The Gray Man</em></li>
+            <li><em>Ghosted</em></li>
+        </ul>
+
+        <p>With work spanning international cinema and major Hollywood productions, de Armas has established a diverse screen career while also taking on producing responsibilities.</p>
+    `,
+
+        location: "Havana, Cuba",
+        email: "official-contact-required",
+
+        social: {
+            instagram: "#",
+            facebook: "#",
+            x: "#"
+        },
+
+        stats: {
+            experience: "20+ years",
+            appearances: "30+ credits",
+            fans: "Global audience"
+        },
+
+        packages: [
+
+            {
+
+                name: "Essential",
+
+                price: 10099,
+
+                description:
+                    "A personal meet-and-greet experience."
+
+            },
+
+            {
+
+                name: "Premium",
+
+                price: 34999,
+
+                description:
+                    "An extended personal experience with additional time."
+
+            },
+
+            {
+
+                name: "VIP",
+
+                price: 49999,
+
+                description:
+                    "The complete premium experience."
+
+            }
+
+        ]
+    },
+
+
+    "zendaya": {
+        name: "Zendaya",
+        category: "Actress, Singer & Producer",
+        image: "images/zendaya.jpg",
+        heroImage: "images/zendaya-hero.jpg",
+
+        shortBio:
+            "American actress, singer, and producer known for Euphoria, Spider-Man, The Greatest Showman, Dune, and Challengers.",
+
+        bio: `
+        <p>Zendaya is an American actress, singer, and producer who began her career as a child performer before moving into major television and film roles. She first gained widespread recognition through Disney Channel productions before establishing herself as a leading film and television actress.</p>
+
+        <p>Her film breakthrough came with <em>Spider-Man: Homecoming</em>, where she portrayed Michelle "MJ" Jones. She subsequently appeared in <em>The Greatest Showman</em> and continued her work within the Marvel Cinematic Universe.</p>
+
+        <p>Zendaya also stars as Rue Bennett in the HBO drama <em>Euphoria</em>, a role that brought her major awards recognition. Her film work has expanded through Denis Villeneuve's <em>Dune</em> films and the sports drama <em>Challengers</em>.</p>
+
+        <h3>Some notable films and projects include:</h3>
+
+        <ul>
+            <li><em>Spider-Man: Homecoming</em></li>
+            <li><em>Spider-Man: Far From Home</em></li>
+            <li><em>Spider-Man: No Way Home</em></li>
+            <li><em>The Greatest Showman</em></li>
+            <li><em>Dune</em></li>
+            <li><em>Dune: Part Two</em></li>
+            <li><em>Challengers</em></li>
+            <li><em>Euphoria</em></li>
+            <li><em>Malcolm & Marie</em></li>
+        </ul>
+
+        <p>Alongside acting, Zendaya has worked in music, production, fashion, and other creative areas, making her career one that extends beyond traditional film performance.</p>
+    `,
+
+        location: "Oakland, California",
+        email: "official-contact-required",
+
+        social: {
+            instagram: "#",
+            facebook: "#",
+            x: "#"
+        },
+
+        stats: {
+            experience: "20+ years",
+            appearances: "30+ credits",
+            fans: "Global audience"
+        },
+
+        packages: [
+
+            {
+
+                name: "Essential",
+
+                price: 10099,
+
+                description:
+                    "A personal meet-and-greet experience."
+
+            },
+
+            {
+
+                name: "Premium",
+
+                price: 34999,
+
+                description:
+                    "An extended personal experience with additional time."
+
+            },
+
+            {
+
+                name: "VIP",
+
+                price: 49999,
+
+                description:
+                    "The complete premium experience."
+
+            }
+
+        ]
+    },
+
+
+    "ryan-gosling": {
+        name: "Ryan Gosling",
+        category: "Actor, Producer & Musician",
+        image: "images/ryan-gosling.jpg",
+        heroImage: "images/ryan-gosling-hero.jpg",
+
+        shortBio:
+            "Canadian actor, producer, and musician known for acclaimed performances in The Notebook, Drive, La La Land, Blade Runner 2049, and Barbie.",
+
+        bio: `
+        <p>Ryan Gosling is a Canadian actor, producer, and musician whose career has included romantic dramas, independent films, comedies, science fiction, and major Hollywood productions. He began performing at a young age before transitioning into film and television roles.</p>
+
+        <p>Gosling gained early recognition through projects such as <em>The Believer</em> and later established himself as a leading actor with films including <em>The Notebook</em>, <em>Half Nelson</em>, <em>Blue Valentine</em>, and <em>Crazy, Stupid, Love.</em>.</p>
+
+        <p>His collaborations with acclaimed directors have produced several notable performances, including <em>Drive</em>, <em>La La Land</em>, and <em>Blade Runner 2049</em>. His performance in <em>La La Land</em> earned him an Academy Award nomination for Best Actor.</p>
+
+        <h3>Some notable films include:</h3>
+
+        <ul>
+            <li><em>The Notebook</em></li>
+            <li><em>Half Nelson</em></li>
+            <li><em>Blue Valentine</em></li>
+            <li><em>Drive</em></li>
+            <li><em>Crazy, Stupid, Love.</em></li>
+            <li><em>La La Land</em></li>
+            <li><em>Blade Runner 2049</em></li>
+            <li><em>The Nice Guys</em></li>
+            <li><em>Barbie</em></li>
+            <li><em>The Fall Guy</em></li>
+        </ul>
+
+        <p>Alongside acting and producing, Gosling has also explored music and performance, including his work with the musical project Dead Man's Bones.</p>
+    `,
+
+        location: "Los Angeles, California",
+        email: "official-contact-required",
+
+        social: {
+            instagram: "#",
+            facebook: "#",
+            x: "#"
+        },
+
+        stats: {
+            experience: "30+ years",
+            appearances: "50+ credits",
+            fans: "Global audience"
+        },
+
+        packages: [
+
+            {
+
+                name: "Essential",
+
+                price: 10099,
+
+                description:
+                    "A personal meet-and-greet experience."
+
+            },
+
+            {
+
+                name: "Premium",
+
+                price: 34999,
+
+                description:
+                    "An extended personal experience with additional time."
+
+            },
+
+            {
+
+                name: "VIP",
+
+                price: 49999,
+
+                description:
+                    "The complete premium experience."
+
+            }
+
+        ]
+    },
+
+
+
+    "florence-pugh": {
+        name: "Florence Pugh",
+        category: "Actress & Producer",
+        image: "images/florence-pugh.jpg",
+        heroImage: "images/florence-pugh-hero.jpg",
+
+        shortBio:
+            "English actress and producer known for Midsommar, Little Women, Black Widow, Oppenheimer, and Dune: Part Two.",
+
+        bio: `
+        <p>Florence Pugh is an English actress and producer known for performances across independent cinema, period dramas, psychological thrillers, major franchise films, and contemporary dramas. She made her feature-film debut in <em>The Falling</em> before gaining recognition for her work in British cinema.</p>
+
+        <p>Her performances in <em>Lady Macbeth</em> and <em>Fighting with My Family</em> helped establish her as a distinctive young screen performer. She gained international attention with Ari Aster's psychological horror film <em>Midsommar</em> and Greta Gerwig's <em>Little Women</em>.</p>
+
+        <p>Pugh later joined the Marvel Cinematic Universe as Yelena Belova in <em>Black Widow</em> and continued the character in subsequent Marvel projects. She also appeared in Christopher Nolan's <em>Oppenheimer</em> and Denis Villeneuve's <em>Dune: Part Two</em>.</p>
+
+        <h3>Some notable films include:</h3>
+
+        <ul>
+            <li><em>The Falling</em></li>
+            <li><em>Lady Macbeth</em></li>
+            <li><em>Fighting with My Family</em></li>
+            <li><em>Midsommar</em></li>
+            <li><em>Little Women</em></li>
+            <li><em>Black Widow</em></li>
+            <li><em>Don't Worry Darling</em></li>
+            <li><em>Oppenheimer</em></li>
+            <li><em>Dune: Part Two</em></li>
+        </ul>
+
+        <p>With work ranging from independent films to major studio franchises, Pugh has developed a varied filmography while continuing to take on both dramatic and genre-driven roles.</p>
+    `,
+
+        location: "Oxford, England",
+        email: "official-contact-required",
+
+        social: {
+            instagram: "#",
+            facebook: "#",
+            x: "#"
+        },
+
+        stats: {
+            experience: "15+ years",
+            appearances: "30+ credits",
+            fans: "Global audience"
+        },
+
+        packages: [
+
+            {
+
+                name: "Essential",
+
+                price: 10099,
+
+                description:
+                    "A personal meet-and-greet experience."
+
+            },
+
+            {
+
+                name: "Premium",
+
+                price: 34999,
+
+                description:
+                    "An extended personal experience with additional time."
+
+            },
+
+            {
+
+                name: "VIP",
+
+                price: 49999,
+
+                description:
+                    "The complete premium experience."
+
+            }
+
+        ]
     }
 
 };

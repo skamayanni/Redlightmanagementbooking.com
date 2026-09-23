@@ -135,14 +135,33 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+
     /* =========================================
-       INDEX PAGE
-       BUILD CELEBRITY CARDS
-    ========================================= */
+   INDEX PAGE
+   CELEBRITY PAGINATION
+========================================= */
 
     const celebrityGrid =
         document.getElementById(
             "celebrityGrid"
+        );
+
+
+    const nextCelebrities =
+        document.getElementById(
+            "nextCelebrities"
+        );
+
+
+    const previousCelebrities =
+        document.getElementById(
+            "previousCelebrities"
+        );
+
+
+    const celebrityPageNumber =
+        document.getElementById(
+            "celebrityPageNumber"
         );
 
 
@@ -151,24 +170,59 @@ document.addEventListener("DOMContentLoaded", function () {
         typeof celebrities !== "undefined"
     ) {
 
-        celebrityGrid.innerHTML = "";
+        const celebrityEntries =
+            Object.entries(celebrities);
 
 
-        Object.entries(celebrities).forEach(
-            ([id, celebrity]) => {
+        const celebritiesPerPage = 9;
 
 
-                const card =
-                    document.createElement(
-                        "article"
-                    );
+        let currentCelebrityPage = 1;
 
 
-                card.className =
-                    "celebrity-card";
+        const totalCelebrityPages =
+            Math.ceil(
+                celebrityEntries.length /
+                celebritiesPerPage
+            );
 
 
-                card.innerHTML = `
+        function displayCelebrityPage(page) {
+
+            celebrityGrid.innerHTML = "";
+
+
+            const start =
+                (page - 1) *
+                celebritiesPerPage;
+
+
+            const end =
+                start +
+                celebritiesPerPage;
+
+
+            const currentCelebrities =
+                celebrityEntries.slice(
+                    start,
+                    end
+                );
+
+
+            currentCelebrities.forEach(
+                ([id, celebrity]) => {
+
+                    const card =
+                        document.createElement(
+                            "article"
+                        );
+
+
+                    card.className =
+                        "celebrity-card";
+
+
+                    card.innerHTML = `
 
                     <div class="celebrity-card-image">
 
@@ -209,9 +263,124 @@ document.addEventListener("DOMContentLoaded", function () {
                 `;
 
 
-                celebrityGrid.appendChild(card);
+                    celebrityGrid.appendChild(
+                        card
+                    );
+
+                }
+            );
+
+
+            /* Update page number */
+
+            if (celebrityPageNumber) {
+
+                celebrityPageNumber.textContent =
+                    `${page} / ${totalCelebrityPages}`;
 
             }
+
+
+            /* Previous button */
+
+            if (previousCelebrities) {
+
+                previousCelebrities.disabled =
+                    page === 1;
+
+            }
+
+
+            /* Next button */
+
+            if (nextCelebrities) {
+
+                nextCelebrities.disabled =
+                    page === totalCelebrityPages;
+
+            }
+
+        }
+
+
+        /* =========================================
+           NEXT BUTTON
+        ========================================= */
+
+        if (nextCelebrities) {
+
+            nextCelebrities.addEventListener(
+                "click",
+                function () {
+
+                    if (
+                        currentCelebrityPage <
+                        totalCelebrityPages
+                    ) {
+
+                        currentCelebrityPage++;
+
+
+                        displayCelebrityPage(
+                            currentCelebrityPage
+                        );
+
+
+                        celebrityGrid.scrollIntoView({
+                            behavior: "smooth",
+                            block: "start"
+                        });
+
+                    }
+
+                }
+            );
+
+        }
+
+
+        /* =========================================
+           PREVIOUS BUTTON
+        ========================================= */
+
+        if (previousCelebrities) {
+
+            previousCelebrities.addEventListener(
+                "click",
+                function () {
+
+                    if (
+                        currentCelebrityPage >
+                        1
+                    ) {
+
+                        currentCelebrityPage--;
+
+
+                        displayCelebrityPage(
+                            currentCelebrityPage
+                        );
+
+
+                        celebrityGrid.scrollIntoView({
+                            behavior: "smooth",
+                            block: "start"
+                        });
+
+                    }
+
+                }
+            );
+
+        }
+
+
+        /* =========================================
+           LOAD FIRST PAGE
+        ========================================= */
+
+        displayCelebrityPage(
+            currentCelebrityPage
         );
 
     }
