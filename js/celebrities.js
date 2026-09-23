@@ -440,56 +440,46 @@ const celebrities = {
     },
 
 
-    "cody-johnson": {
-
-        name: "Cody Johnson",
-
+    "george-strait": {
+        name: "George Strait",
         category: "Country Singer & Songwriter",
-
-        image:
-            "images/cody-johnson.jpg",
-
-        heroImage:
-            "images/cody-johnson-hero.jpg",
+        image: "images/george-strait.jpg",
+        heroImage: "images/george-strait-hero.jpg",
 
         shortBio:
-            "Country singer-songwriter known for his traditional country sound, powerful performances, and deep connections to Texas and Western culture.",
+            "Legendary American country singer and songwriter known for his traditional country sound, timeless storytelling, and an extraordinary catalog of chart-topping hits spanning more than four decades.",
 
-        bio:
-            `
-        <p>Cody Johnson is an American country singer and songwriter known for his traditional country sound, powerful live performances, and strong connections to his Texas roots.</p>
+        bio: `
+        <p>George Strait is an American country singer, songwriter, guitarist, and performer whose career has had an enormous influence on modern country music. Born in Poteet, Texas, Strait developed his musical identity around the traditional country sound that would become a defining part of his career.</p>
 
-        <p>Born in Sebastopol, Texas, Johnson developed his career through independent releases and extensive touring. His music reflects his background in Texas, rodeo culture, family, relationships, and traditional country music.</p>
+        <p>Strait began his recording career in the early 1980s and quickly established himself as one of country music's most consistent hitmakers. His straightforward approach to country music, combined with his distinctive voice and understated performance style, helped make him one of the most recognizable artists in the genre.</p>
 
-        <p>Johnson gained widespread attention with songs including “On My Way to You,” “Nothin’ on You,” and “Dear Rodeo.” His music has helped introduce traditional country influences to a broad modern audience.</p>
+        <p>Throughout his career, Strait has recorded more than 30 albums and hundreds of songs. His official biography credits him with 60 No. 1 singles, while his catalog includes numerous gold, platinum, and multi-platinum albums. He was inducted into the Country Music Hall of Fame in 2006.</p>
 
-        <p>His album <em>Leather</em> received major recognition, including the CMA Award for Album of the Year. Johnson has continued building his career through touring, songwriting, and new music.</p>
-
-        <p>His 2026 project <em>Banks of the Trinity</em> continues his connection to traditional country music while exploring stories drawn from his childhood and personal experiences.</p>
+        <p>Strait's career has also included major live performances and landmark tours. His 2014 Cowboy Rides Away Tour finale at AT&T Stadium in Arlington, Texas, drew 104,793 concert-goers and set a North American indoor concert attendance record at the time.</p>
 
         <h3>Some notable songs include:</h3>
 
         <ul>
-            <li>“On My Way to You”</li>
-            <li>“Dear Rodeo”</li>
-            <li>“'Til You Can't”</li>
-            <li>“Nothin' on You”</li>
-            <li>“Human”</li>
-            <li>“Wild as You”</li>
-            <li>“Dance Her Home”</li>
-            <li>“Dirt Cheap”</li>
-            <li>“The Painter”</li>
-            <li>“Ain't Nothin' to It”</li>
+            <li>"Amarillo by Morning"</li>
+            <li>"The Chair"</li>
+            <li>"All My Ex's Live in Texas"</li>
+            <li>"Check Yes or No"</li>
+            <li>"I Cross My Heart"</li>
+            <li>"Carrying Your Love with Me"</li>
+            <li>"Write This Down"</li>
+            <li>"The Best Day"</li>
+            <li>"Troubadour"</li>
+            <li>"Give It Away"</li>
+            <li>"I Saw God Today"</li>
+            <li>"Every Little Honky Tonk Bar"</li>
         </ul>
 
-        <p>Johnson continues to carry traditional country influences into contemporary country music while maintaining a strong connection to his Texas and Western roots.</p>
-        `,
+        <p>George Strait's enduring career has made him one of the defining figures in country music. His extensive catalog, traditional sound, and decades of successful recordings continue to connect with generations of country music listeners.</p>
+    `,
 
-        location:
-            "Sebastopol, Texas",
-
-        email:
-            "official-contact-required",
+        location: "Poteet, Texas",
+        email: "official-contact-required",
 
         social: {
             instagram: "#",
@@ -498,9 +488,9 @@ const celebrities = {
         },
 
         stats: {
-            experience: "—",
-            appearances: "—",
-            fans: "—"
+            experience: "45+ years",
+            appearances: "400+ songs",
+            fans: "Global audience"
         },
 
         packages: [
@@ -539,7 +529,6 @@ const celebrities = {
             }
 
         ]
-
     },
 
 
@@ -947,39 +936,48 @@ const celebrities = {
 
     },
 
-    "glen-powell": {
-        name: "Glen Powell",
-        category: "Actor & Producer",
-        image: "images/glen-powell.jpg",
-        heroImage: "images/glen-powell-hero.jpg",
+    "alan-jackson": {
+        name: "Alan Jackson",
+        category: "Country Singer & Songwriter",
+        image: "images/alan-jackson.jpg",
+        heroImage: "images/alan-jackson-hero.jpg",
 
         shortBio:
-            "American actor and producer known for charismatic performances in films including Top Gun: Maverick, Anyone But You, Hit Man, Hidden Figures, and Everybody Wants Some!!.",
+            "American country singer and songwriter known for his traditional country style, distinctive voice, and enduring hits including Chattahoochee, Don't Rock the Jukebox, Remember When, and Where Were You.",
 
         bio: `
-        <p>Glen Powell is an American actor and producer whose career has developed across television, comedy, drama, action, and major Hollywood productions. Born in Austin, Texas, Powell began acting at a young age and gradually built a varied screen career through television appearances and supporting film roles.</p>
+        <p>Alan Jackson is an American country singer and songwriter whose music is closely associated with traditional country, honky-tonk, and Southern storytelling. Born in Newnan, Georgia, Jackson developed a love for country music early in life and eventually moved to Nashville to pursue his musical career.</p>
 
-        <p>He gained wider recognition through projects such as <em>Scream Queens</em>, <em>Everybody Wants Some!!</em>, and <em>Hidden Figures</em>, before taking on the role of Lieutenant Jake "Hangman" Seresin in <em>Top Gun: Maverick</em>. The film brought him international attention and established him as a prominent leading actor.</p>
+        <p>Jackson signed with Arista Nashville in 1989 and released his debut album, <em>Here in the Real World</em>, in 1990. The album established his distinctive sound and produced several successful singles, beginning a career that would become one of the most influential in contemporary country music.</p>
 
-        <p>Powell continued to demonstrate his range with the romantic comedy <em>Anyone But You</em> and the action-comedy thriller <em>Hit Man</em>. His performances have allowed him to move comfortably between comedy, romance, drama, and action-oriented roles.</p>
+        <p>Over the following decades, Jackson released a large catalog of albums and hit singles. His songwriting often explores everyday life, relationships, family, faith, heartbreak, and the traditions of the American South.</p>
 
-        <h3>Some notable films and projects include:</h3>
+        <p>Jackson has also received recognition from many of the major institutions in country music. He is a member of the Grand Ole Opry and has been inducted into the Country Music Hall of Fame and the Nashville Songwriters Hall of Fame. His career has included numerous CMA, ACM, and Grammy honors.</p>
+
+        <p>In 2001, Jackson released "Where Were You (When the World Stopped Turning)," a song inspired by the events of September 11. The song became one of the most recognized recordings of his career and demonstrated his ability to address major events through straightforward country songwriting.</p>
+
+        <h3>Some notable songs include:</h3>
 
         <ul>
-            <li><em>Top Gun: Maverick</em></li>
-            <li><em>Anyone But You</em></li>
-            <li><em>Hit Man</em></li>
-            <li><em>Hidden Figures</em></li>
-            <li><em>Everybody Wants Some!!</em></li>
-            <li><em>Set It Up</em></li>
-            <li><em>Scream Queens</em></li>
-            <li><em>Chad Powers</em></li>
+            <li>"Don't Rock the Jukebox"</li>
+            <li>"Chattahoochee"</li>
+            <li>"Gone Country"</li>
+            <li>"Remember When"</li>
+            <li>"Drive (For Daddy Gene)"</li>
+            <li>"Chasin' That Neon Rainbow"</li>
+            <li>"Where I Come From"</li>
+            <li>"Wanted"</li>
+            <li>"Little Man"</li>
+            <li>"Who’s Cheatin’ Who"</li>
+            <li>"It's Five O'Clock Somewhere" with Jimmy Buffett</li>
+            <li>"Where Were You (When the World Stopped Turning)"</li>
+            <li>"Murder on Music Row" with George Strait</li>
         </ul>
 
-        <p>With work spanning acting and producing, Glen Powell continues to build a diverse career across film and television while taking on both leading and supporting roles.</p>
+        <p>Alan Jackson's music continues to represent a traditional approach to country songwriting, combining memorable melodies with stories about family, relationships, Southern life, and personal experiences.</p>
     `,
 
-        location: "Austin, Texas",
+        location: "Newnan, Georgia",
         email: "official-contact-required",
 
         social: {
@@ -989,8 +987,8 @@ const celebrities = {
         },
 
         stats: {
-            experience: "20+ years",
-            appearances: "60+ credits",
+            experience: "35+ years",
+            appearances: "60+ charted singles",
             fans: "Global audience"
         },
 
@@ -1031,6 +1029,7 @@ const celebrities = {
 
         ]
     },
+
 
     "sydney-sweeney": {
         name: "Sydney Sweeney",
@@ -1555,41 +1554,39 @@ const celebrities = {
     },
 
 
-    "ryan-gosling": {
-        name: "Ryan Gosling",
-        category: "Actor, Producer & Musician",
-        image: "images/ryan-gosling.jpg",
-        heroImage: "images/ryan-gosling-hero.jpg",
+    "glen-powell": {
+        name: "Glen Powell",
+        category: "Actor & Producer",
+        image: "images/glen-powell.jpg",
+        heroImage: "images/glen-powell-hero.jpg",
 
         shortBio:
-            "Canadian actor, producer, and musician known for acclaimed performances in The Notebook, Drive, La La Land, Blade Runner 2049, and Barbie.",
+            "American actor and producer known for charismatic performances in films including Top Gun: Maverick, Anyone But You, Hit Man, Hidden Figures, and Everybody Wants Some!!.",
 
         bio: `
-        <p>Ryan Gosling is a Canadian actor, producer, and musician whose career has included romantic dramas, independent films, comedies, science fiction, and major Hollywood productions. He began performing at a young age before transitioning into film and television roles.</p>
+        <p>Glen Powell is an American actor and producer whose career has developed across television, comedy, drama, action, and major Hollywood productions. Born in Austin, Texas, Powell began acting at a young age and gradually built a varied screen career through television appearances and supporting film roles.</p>
 
-        <p>Gosling gained early recognition through projects such as <em>The Believer</em> and later established himself as a leading actor with films including <em>The Notebook</em>, <em>Half Nelson</em>, <em>Blue Valentine</em>, and <em>Crazy, Stupid, Love.</em>.</p>
+        <p>He gained wider recognition through projects such as <em>Scream Queens</em>, <em>Everybody Wants Some!!</em>, and <em>Hidden Figures</em>, before taking on the role of Lieutenant Jake "Hangman" Seresin in <em>Top Gun: Maverick</em>. The film brought him international attention and established him as a prominent leading actor.</p>
 
-        <p>His collaborations with acclaimed directors have produced several notable performances, including <em>Drive</em>, <em>La La Land</em>, and <em>Blade Runner 2049</em>. His performance in <em>La La Land</em> earned him an Academy Award nomination for Best Actor.</p>
+        <p>Powell continued to demonstrate his range with the romantic comedy <em>Anyone But You</em> and the action-comedy thriller <em>Hit Man</em>. His performances have allowed him to move comfortably between comedy, romance, drama, and action-oriented roles.</p>
 
-        <h3>Some notable films include:</h3>
+        <h3>Some notable films and projects include:</h3>
 
         <ul>
-            <li><em>The Notebook</em></li>
-            <li><em>Half Nelson</em></li>
-            <li><em>Blue Valentine</em></li>
-            <li><em>Drive</em></li>
-            <li><em>Crazy, Stupid, Love.</em></li>
-            <li><em>La La Land</em></li>
-            <li><em>Blade Runner 2049</em></li>
-            <li><em>The Nice Guys</em></li>
-            <li><em>Barbie</em></li>
-            <li><em>The Fall Guy</em></li>
+            <li><em>Top Gun: Maverick</em></li>
+            <li><em>Anyone But You</em></li>
+            <li><em>Hit Man</em></li>
+            <li><em>Hidden Figures</em></li>
+            <li><em>Everybody Wants Some!!</em></li>
+            <li><em>Set It Up</em></li>
+            <li><em>Scream Queens</em></li>
+            <li><em>Chad Powers</em></li>
         </ul>
 
-        <p>Alongside acting and producing, Gosling has also explored music and performance, including his work with the musical project Dead Man's Bones.</p>
+        <p>With work spanning acting and producing, Glen Powell continues to build a diverse career across film and television while taking on both leading and supporting roles.</p>
     `,
 
-        location: "Los Angeles, California",
+        location: "Austin, Texas",
         email: "official-contact-required",
 
         social: {
@@ -1599,8 +1596,8 @@ const celebrities = {
         },
 
         stats: {
-            experience: "30+ years",
-            appearances: "50+ credits",
+            experience: "20+ years",
+            appearances: "60+ credits",
             fans: "Global audience"
         },
 
@@ -1641,8 +1638,6 @@ const celebrities = {
 
         ]
     },
-
-
 
     "florence-pugh": {
         name: "Florence Pugh",
