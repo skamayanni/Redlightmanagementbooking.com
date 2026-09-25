@@ -2,7 +2,7 @@
    WEB3FORMS_ACCESS_KEY
 ========================================= */
 const WEB3FORMS_ACCESS_KEY =
-    "706b76aa-3212-4584-9b8a-b632feed9dc4";
+    "ac9307a0-a416-4fc8-87b2-78c2289b3734";
 
 
 
@@ -1196,7 +1196,7 @@ document.addEventListener("DOMContentLoaded", function () {
             );
 
             formData.append(
-                "customer_email",
+                "email",
                 email
             );
 
@@ -1777,7 +1777,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 );
 
                 formData.append(
-                    "donor_email",
+                    "email",
                     donorEmail
                 );
 
