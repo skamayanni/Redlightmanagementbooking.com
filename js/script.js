@@ -1,4 +1,12 @@
 /* =========================================
+   WEB3FORMS_ACCESS_KEY
+========================================= */
+const WEB3FORMS_ACCESS_KEY =
+    "ac9307a0-a416-4fc8-87b2-78c2289b3734";
+
+
+
+/* =========================================
    TO OPEN TAWK.TO
 ========================================= */
 
@@ -902,10 +910,9 @@ document.addEventListener("DOMContentLoaded", function () {
                         </p>
 
                         <a
-                           href="booking.html?celebrity=${celebrityId}&package=${encodeURIComponent(pkg.name)}" class="package-action" onclick="openTawkChat()" >
-                            Request This Experience
+                          href="booking.html?celebrity=${celebrityId}&package=${encodeURIComponent(pkg.name)}#bookingForm" class="package-action">
+                           Request This Experience
                         </a>
-                        
                         `;
 
 
@@ -1085,32 +1092,190 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (bookingForm) {
 
-        bookingForm.addEventListener(
-            "submit",
-            function (e) {
+        bookingForm.addEventListener("submit", async function (e) {
 
-                e.preventDefault();
+            e.preventDefault();
 
+            const submitButton =
+                document.getElementById("submitExperienceRequest");
 
-                const firstNameElement =
-                    document.getElementById(
-                        "firstName"
-                    );
+            const formMessage =
+                document.getElementById("formMessage");
 
+            const celebrityName =
+                currentCelebrity
+                    ? currentCelebrity.name
+                    : "Not specified";
 
-                const firstName =
-                    firstNameElement
-                        ? firstNameElement.value
-                        : "Guest";
+            const selectedExperience =
+                packageSelect
+                    ? packageSelect.value
+                    : "";
 
+            if (!selectedExperience) {
 
-                const selectedExperience =
-                    packageSelect
-                        ? packageSelect.value
-                        : "";
+                if (formMessage) {
+                    formMessage.style.display = "block";
+                    formMessage.textContent =
+                        "Please select a meet & greet experience.";
+                }
 
+                return;
+            }
 
-                if (!selectedExperience) {
+            /* -----------------------------
+               GET FORM VALUES
+            ----------------------------- */
+
+            const firstName =
+                document.getElementById("firstName")?.value.trim() || "";
+
+            const lastName =
+                document.getElementById("lastName")?.value.trim() || "";
+
+            const email =
+                document.getElementById("email")?.value.trim() || "";
+
+            const phone =
+                document.getElementById("phone")?.value.trim() || "";
+
+            const preferredDate =
+                document.getElementById("date")?.value || "";
+
+            const guests =
+                document.getElementById("guests")?.value || "";
+
+            const location =
+                document.getElementById("location")?.value.trim() || "";
+
+            const message =
+                document.getElementById("message")?.value.trim() ||
+                "No additional message provided.";
+
+            /* -----------------------------
+               SHOW SUBMITTING MESSAGE
+            ----------------------------- */
+
+            if (submitButton) {
+                submitButton.disabled = true;
+                submitButton.textContent = "Submitting Request...";
+            }
+
+            if (formMessage) {
+                formMessage.style.display = "block";
+                formMessage.textContent =
+                    "Submitting your experience request...";
+            }
+
+            /* -----------------------------
+               CREATE EMAIL DATA
+            ----------------------------- */
+
+            const formData = new FormData();
+
+            formData.append(
+                "access_key",
+                WEB3FORMS_ACCESS_KEY
+            );
+
+            formData.append(
+                "subject",
+                `New ${celebrityName} Meet & Greet Request`
+            );
+
+            formData.append(
+                "from_name",
+                "The Experience Website"
+            );
+
+            /* Customer */
+
+            formData.append(
+                "customer_name",
+                `${firstName} ${lastName}`
+            );
+
+            formData.append(
+                "customer_email",
+                email
+            );
+
+            formData.append(
+                "customer_phone",
+                phone
+            );
+
+            /* Celebrity */
+
+            formData.append(
+                "celebrity",
+                celebrityName
+            );
+
+            /* Experience */
+
+            formData.append(
+                "package",
+                selectedExperience
+            );
+
+            formData.append(
+                "preferred_date",
+                preferredDate
+            );
+
+            formData.append(
+                "number_of_guests",
+                guests
+            );
+
+            formData.append(
+                "preferred_location",
+                location
+            );
+
+            /* Message */
+
+            formData.append(
+                "customer_message",
+                message
+            );
+
+            /* -----------------------------
+               SEND TO WEB3FORMS
+            ----------------------------- */
+
+            try {
+
+                const response = await fetch(
+                    "https://api.web3forms.com/submit",
+                    {
+                        method: "POST",
+                        body: formData
+                    }
+                );
+
+                const result =
+                    await response.json();
+
+                console.log(
+                    "WEB3FORMS RESPONSE:",
+                    result
+                );
+
+                console.log(
+                    "HTTP STATUS:",
+                    response.status
+                );
+
+                /* -----------------------------
+                   SUCCESS
+                ----------------------------- */
+
+                if (
+                    response.ok &&
+                    result.success
+                ) {
 
                     if (formMessage) {
 
@@ -1118,14 +1283,66 @@ document.addEventListener("DOMContentLoaded", function () {
                             "block";
 
                         formMessage.textContent =
-                            "Please select a meet & greet experience.";
+                            `Thank you, ${firstName}. Your ${selectedExperience} experience request is pending. Please contact our Customer Support team below to complete the process and receive further assistance with the next steps.
+
+                               In the meantime, our Experience Team will contact you via email with additional information and guidance.`;
 
                     }
 
-                    return;
+                    bookingForm.reset();
+
+                    /*
+                     * Restore the selected package
+                     * if the URL contained one.
+                     */
+
+                    if (
+                        selectedPackage &&
+                        packageSelect
+                    ) {
+
+                        packageSelect.value =
+                            selectedPackage;
+
+                    }
 
                 }
 
+                /* -----------------------------
+                   ERROR FROM WEB3FORMS
+                ----------------------------- */
+
+                else {
+
+                    if (formMessage) {
+
+                        formMessage.style.display =
+                            "block";
+
+                        formMessage.textContent =
+                            "We couldn't submit your request right now. Please try again shortly.";
+
+                    }
+
+                    console.error(
+                        "Web3Forms error:",
+                        result
+                    );
+
+                }
+
+            }
+
+            /* -----------------------------
+               NETWORK ERROR
+            ----------------------------- */
+
+            catch (error) {
+
+                console.error(
+                    "Submission error:",
+                    error
+                );
 
                 if (formMessage) {
 
@@ -1133,15 +1350,31 @@ document.addEventListener("DOMContentLoaded", function () {
                         "block";
 
                     formMessage.textContent =
-                        `Thank you, ${firstName}. Your ${selectedExperience} experience request has been received. Please contact our Customer Support team below to complete the process and receive further assistance with the next steps.`;
+                        "Something went wrong while submitting your request. Please try again.";
 
                 }
 
+            }
 
-                bookingForm.reset();
+            /* -----------------------------
+               RESTORE BUTTON
+            ----------------------------- */
+
+            finally {
+
+                if (submitButton) {
+
+                    submitButton.disabled =
+                        false;
+
+                    submitButton.textContent =
+                        "Submit Experience Request";
+
+                }
 
             }
-        );
+
+        });
 
     }
 
@@ -1298,6 +1531,29 @@ document.addEventListener("DOMContentLoaded", function () {
             "click",
             () => {
 
+                /* --------------------------------
+                   REQUIRE EMAIL
+                -------------------------------- */
+
+                const donorEmailInput =
+                    document.getElementById("donorEmail");
+
+                if (
+                    !donorEmailInput ||
+                    !donorEmailInput.checkValidity()
+                ) {
+
+                    donorEmailInput.reportValidity();
+
+                    return;
+
+                }
+
+
+                /* --------------------------------
+                   CHECK DONATION AMOUNT
+                -------------------------------- */
+
                 if (
                     !donationAmount ||
                     donationAmount <= 0
@@ -1312,10 +1568,18 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
 
 
+                /* --------------------------------
+                   FORMAT DONATION AMOUNT
+                -------------------------------- */
+
                 const formattedAmount =
                     "$" +
                     donationAmount.toLocaleString();
 
+
+                /* --------------------------------
+                   UPDATE PAYMENT AMOUNT
+                -------------------------------- */
 
                 if (paymentAmount) {
 
@@ -1325,8 +1589,16 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
 
 
+                /* --------------------------------
+                   UPDATE PAYMENT METHOD AMOUNTS
+                -------------------------------- */
+
                 updatePaymentMethodAmounts();
 
+
+                /* --------------------------------
+                   SHOW PAYMENT SECTION
+                -------------------------------- */
 
                 if (directPaymentSection) {
 
@@ -1334,6 +1606,10 @@ document.addEventListener("DOMContentLoaded", function () {
                         "show-payment"
                     );
 
+
+                    /* --------------------------------
+                       SCROLL TO PAYMENT SECTION
+                    -------------------------------- */
 
                     setTimeout(
                         () => {
@@ -1348,6 +1624,295 @@ document.addEventListener("DOMContentLoaded", function () {
                         },
                         100
                     );
+
+                }
+
+
+                /* --------------------------------
+                   OPEN TAWK CHAT
+                -------------------------------- */
+
+                setTimeout(
+                    () => {
+
+                        if (
+                            typeof Tawk_API !== "undefined" &&
+                            typeof Tawk_API.maximize === "function"
+                        ) {
+
+                            Tawk_API.maximize();
+
+                        }
+
+                    },
+                    500
+                );
+
+            }
+        );
+
+    }
+
+
+    /* =========================================
+   DONATION / CONTRIBUTION REQUEST
+========================================= */
+
+
+
+    const selectedAmountElement =
+        document.getElementById("selectedAmount");
+
+    const paymentAmountElement =
+        document.getElementById("paymentAmount");
+
+
+    if (continueDonation) {
+
+        continueDonation.addEventListener(
+            "click",
+            async function () {
+
+                /* --------------------------------
+                   GET SELECTED AMOUNT
+                -------------------------------- */
+
+                let donationAmount = 0;
+
+                if (selectedAmountElement) {
+
+                    const amountText =
+                        selectedAmountElement.textContent
+                            .replace(/[$,]/g, "")
+                            .trim();
+
+                    donationAmount =
+                        parseFloat(amountText) || 0;
+
+                }
+
+
+                /* --------------------------------
+                   CHECK AMOUNT
+                -------------------------------- */
+
+                if (donationAmount <= 0) {
+
+                    alert(
+                        "Please select or enter a contribution amount before continuing."
+                    );
+
+                    return;
+
+                }
+
+
+                /* --------------------------------
+                   GET DONOR DETAILS
+                -------------------------------- */
+
+                const donorName =
+                    document.getElementById("donorName")?.value.trim() ||
+                    "Not provided";
+
+                const donorEmail =
+                    document.getElementById("donorEmail")?.value.trim() ||
+                    "Not provided";
+
+                const donorPhone =
+                    document.getElementById("donorPhone")?.value.trim() ||
+                    "Not provided";
+
+
+                /* --------------------------------
+                   GET CURRENT CELEBRITY
+                -------------------------------- */
+
+                const celebrityName =
+                    currentCelebrity
+                        ? currentCelebrity.name
+                        : "Not specified";
+
+
+                /* --------------------------------
+                   SEND DONATION NOTIFICATION
+                   TO WEB3FORMS
+                -------------------------------- */
+
+                const formData =
+                    new FormData();
+
+                formData.append(
+                    "access_key",
+                    WEB3FORMS_ACCESS_KEY
+                );
+
+                formData.append(
+                    "subject",
+                    `New ${celebrityName} Contribution Request`
+                );
+
+                formData.append(
+                    "from_name",
+                    "The Experience Website"
+                );
+
+                formData.append(
+                    "celebrity",
+                    celebrityName
+                );
+
+                formData.append(
+                    "contribution_amount",
+                    `$${donationAmount.toLocaleString()}`
+                );
+
+                formData.append(
+                    "donor_name",
+                    donorName
+                );
+
+                formData.append(
+                    "donor_email",
+                    donorEmail
+                );
+
+                formData.append(
+                    "donor_phone",
+                    donorPhone
+                );
+
+                formData.append(
+                    "request_type",
+                    "Contribution / Donation"
+                );
+
+
+                /* --------------------------------
+                   SHOW SENDING STATE
+                -------------------------------- */
+
+                const originalButtonText =
+                    continueDonation.textContent;
+
+                continueDonation.disabled =
+                    true;
+
+                continueDonation.textContent =
+                    "Processing...";
+
+
+                try {
+
+                    const response =
+                        await fetch(
+                            "https://api.web3forms.com/submit",
+                            {
+                                method: "POST",
+                                body: formData
+                            }
+                        );
+
+
+                    const result =
+                        await response.json();
+
+
+                    console.log(
+                        "DONATION WEB3FORMS RESPONSE:",
+                        result
+                    );
+
+
+                    /* --------------------------------
+                       SUCCESS
+                    -------------------------------- */
+
+                    if (
+                        response.ok &&
+                        result.success
+                    ) {
+
+                        /*
+                         * Update payment amount
+                         */
+
+                        if (paymentAmountElement) {
+
+                            paymentAmountElement.textContent =
+                                `$${donationAmount.toLocaleString()}`;
+
+                        }
+
+
+                        /*
+                         * Scroll to payment section
+                         */
+
+                        if (directPaymentSection) {
+
+                            directPaymentSection.scrollIntoView({
+                                behavior: "smooth",
+                                block: "start"
+                            });
+
+                        }
+
+
+                        /*
+                         * Open Tawk chat
+                         */
+
+                        setTimeout(function () {
+
+                            if (
+                                typeof Tawk_API !== "undefined" &&
+                                Tawk_API.maximize
+                            ) {
+
+                                Tawk_API.maximize();
+
+                            }
+
+                        }, 700);
+
+                    }
+
+                    else {
+
+                        console.error(
+                            "Donation submission error:",
+                            result
+                        );
+
+                        alert(
+                            "We couldn't submit your contribution request. Please try again."
+                        );
+
+                    }
+
+                }
+
+                catch (error) {
+
+                    console.error(
+                        "Donation submission error:",
+                        error
+                    );
+
+                    alert(
+                        "Something went wrong while submitting your request. Please try again."
+                    );
+
+                }
+
+                finally {
+
+                    continueDonation.disabled =
+                        false;
+
+                    continueDonation.textContent =
+                        originalButtonText;
 
                 }
 
