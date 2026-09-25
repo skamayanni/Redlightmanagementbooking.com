@@ -2,7 +2,7 @@
    WEB3FORMS_ACCESS_KEY
 ========================================= */
 const WEB3FORMS_ACCESS_KEY =
-    "ac9307a0-a416-4fc8-87b2-78c2289b3734";
+    "706b76aa-3212-4584-9b8a-b632feed9dc4";
 
 
 
@@ -1279,14 +1279,18 @@ document.addEventListener("DOMContentLoaded", function () {
 
                     if (formMessage) {
 
-                        formMessage.style.display =
-                            "block";
+                        formMessage.style.display = "block";
 
                         formMessage.textContent =
                             `Thank you, ${firstName}. Your ${selectedExperience} experience request is pending. Please contact our Customer Support team below to complete the process and receive further assistance with the next steps.
 
-                               In the meantime, our Experience Team will contact you via email with additional information and guidance.`;
+            In the meantime, our Experience Team will contact you via email with additional information and guidance.`;
 
+                        // Scroll to the confirmation message
+                        formMessage.scrollIntoView({
+                            behavior: "smooth",
+                            block: "center"
+                        });
                     }
 
                     bookingForm.reset();
